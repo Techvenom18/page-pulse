@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Pulse</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Page Pulse</h1>
+    <p class="subtitle">Audit any URL — status, speed, SEO basics, accessibility gaps.</p>
+
+    <form id="audit-form">
+      <input
+        type="text"
+        id="url-input"
+        placeholder="https://example.com"
+        autocomplete="off"
+        required
+      />
+      <button type="submit">Audit</button>
+    </form>
+
+    <div id="status"></div>
+    <div id="report" class="report hidden"></div>
+
+    <footer>
+      Built for <a href="https://digitalheroesco.com" target="_blank" rel="noopener">Digital Heroes</a> Training Task
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
