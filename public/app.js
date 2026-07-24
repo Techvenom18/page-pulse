@@ -51,3 +51,10 @@ function escapeHtml(str) {
   div.textContent = str;
   return div.innerHTML;
 }
+
+document.addEventListener('mousemove', (e) => {
+  const xPercent = (e.clientX / window.innerWidth) * 100;
+  const yPercent = (e.clientY / window.innerHeight) * 100;
+  document.body.style.setProperty('--mouse-x', `${xPercent}%`);
+  document.body.style.setProperty('--mouse-y', `${yPercent}%`);
+});
