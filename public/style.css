@@ -6,7 +6,7 @@ body {
   --mouse-y: 50%;
   background:
     radial-gradient(
-      600px circle at var(--mouse-x) var(--mouse-y),
+      350px circle at var(--mouse-x) var(--mouse-y),
       rgba(56, 139, 253, 0.12),
       transparent 40%
     ),
