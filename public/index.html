@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Page Pulse</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -12,14 +13,17 @@
     <p class="subtitle">Audit any URL — status, speed, SEO basics, accessibility gaps.</p>
 
     <form id="audit-form">
-      <input
-        type="text"
-        id="url-input"
-        placeholder="https://example.com"
-        autocomplete="off"
-        required
-      />
-      <button type="submit">Audit</button>
+        <div class="input-wrapper">
+            <button type="button" id="clear-btn" class="clear-btn" aria-label="Clear input">✕</button>
+            <input
+                type="text"
+                id="url-input"
+                placeholder="https://example.com"
+                autocomplete="off"
+                required
+            />
+        </div>
+        <button type="submit">Audit</button>
     </form>
 
     <div id="status"></div>

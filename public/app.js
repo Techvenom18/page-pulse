@@ -3,6 +3,19 @@ const input = document.getElementById('url-input');
 const statusEl = document.getElementById('status');
 const reportEl = document.getElementById('report');
 
+
+const clearBtn = document.getElementById('clear-btn');
+
+input.addEventListener('input', () => {
+  clearBtn.classList.toggle('visible', input.value.length > 0);
+});
+
+clearBtn.addEventListener('click', () => {
+  input.value = '';
+  clearBtn.classList.remove('visible');
+  input.focus();
+});
+
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
   const url = input.value.trim();

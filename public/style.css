@@ -84,3 +84,36 @@ footer {
   font-size: 0.85rem;
 }
 footer a { color: #58a6ff; }
+
+.input-wrapper {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.input-wrapper #url-input {
+  width: 100%;
+  padding-left: 32px; /* room for the clear button */
+}
+
+.clear-btn {
+  position: absolute;
+  left: 8px;
+  background: none;
+  border: none;
+  color: #8b949e;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 4px;
+  line-height: 1;
+  display: none; /* hidden until there's text */
+}
+
+.clear-btn:hover {
+  color: #f85149;
+}
+
+.clear-btn.visible {
+  display: block;
+}
