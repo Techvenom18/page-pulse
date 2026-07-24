@@ -2,6 +2,9 @@
 
 A small tool that audits any URL and returns HTTP status, response time, title, meta description, H1 count, missing alt-text count, and approximate word count.
 
+**Live URL:** https://page-pulse-ptoo.onrender.com/
+**Repo:** https://github.com/Techvenom18/page-pulse
+
 ## Setup
 
 ```powershell
@@ -56,8 +59,8 @@ Some URLs return PDFs, images, or JSON. Checking `content-type` before parsing a
 
 ## What I'd change with another day
 
-- Pick one you find interesting to talk through in your Loom — e.g., caching repeated requests to the same URL for N minutes, handling redirects more explicitly in the report output, or adding a rate limiter per IP.
+I'd add caching so repeated audits of the same URL within a few minutes don't re-fetch it every time.
 
 ## AI usage disclosure
 
-[I used Claude to help me structure the project and explain concepts like AbortController timeouts and Cheerio parsing, since I hadn't used them before. I wrote every file myself by typing the code, ran and debugged it, fixed a Jest/ESM config error on my own machine, and made my own call on treating alt="" as "missing" for stricter accessibility flagging.]
+I used Claude to help me structure the project and explain concepts like AbortController timeouts and Cheerio parsing, since I hadn't used them before. I wrote every file myself by typing the code, ran and debugged it, fixed a Jest/ESM config error on my own machine, and made my own call on treating `alt=""` as "missing" for stricter accessibility flagging.
